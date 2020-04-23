@@ -120,22 +120,14 @@
 
     /* Youtube image in header*/
     .child1 {
-      background-image: url(../images/youtube.webp);
-      /* background-image: url("https://assets.b9.com.br/wp-content/uploads/2019/08/youtube.jpg"); */
-      /* background-color: #4CAF50; */
-      /* flex:1; */
+      background-image: url(../../assets/images/image_pages/images_online/youtube.webp);
       transform: skewX(-20deg);
-      /* margin-left: -100px; */
-      /* background-size: cover; */
       background-position-y: -50px;
     }
 
 /* Marvel image in header */
     .child2 {
-      background-image: url(../images/Marvel_entertainment_logo.jpg);
-      /* flex:1; */
-      /* margin-left: -100px; */
-      /* background-size: cover; */
+      background-image: url(../../assets/images/image_pages/images_online/Marvel_entertainment_logo.jpg);
       background-position-y: -50px;
     }
 
@@ -169,9 +161,12 @@
       top: 0%;
       left: 0%;
       background-color: #111;
-      background-image: url(https://images.unsplash.com/photo-1505489435671-80a165c60816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+      /* back ground image for the nav. menu */
+      background-image: url(../../assets/images/image_pages/images_menu/shieldlogo.jpg);
       background-position: 20px;
       background-size: 100%;
+      background-repeat: no-repeat;
+      /* background-size: cover; */
       background-attachment: fixed;
       overflow-x: hidden;
       transition: 0.5s;
@@ -349,7 +344,7 @@ a:hover{
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
           >&times;</a
         >
-        <a href="../home.html"
+        <a href="../../home.html"
           ><img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLd5gvV5XowKolcsdvo1vNorEMkOndqjcE2jp_hJ5JZDgNu60a"
             alt="Girl in a jacket"
@@ -371,7 +366,7 @@ a:hover{
           />
           Comic's Page</a
         >
-        <a href="../movies/movies.html"
+        <a href="../../pages/movies/movies.html"
           ><img
             src="https://cdn.iconscout.com/icon/free/png-256/the-punisher-marvel-super-hero-earth-saver-avenger-28703.png"
             alt="Girl in a jacket"
@@ -566,7 +561,7 @@ a:hover{
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="../js/app.js"></script>
+    <script src="../../assets/javascript/app.js"></script>
 
     <script>
      $('#search-form').submit(function(e){
