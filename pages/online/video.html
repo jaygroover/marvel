@@ -115,21 +115,32 @@
     .child2 {
       flex: 1;
       margin-left: -100px;
-      background-size: cover;
+      /* background-size: cover; */
+      background-size:100% 100%;
     }
 
     /* Youtube image in header*/
     .child1 {
       background-image: url(../../assets/images/image_pages/images_online/youtube.webp);
       transform: skewX(-20deg);
-      background-position-y: -50px;
+      /* background-position-y: -50px; */
+      background-size:100% 100%;
     }
 
 /* Marvel image in header */
     .child2 {
       background-image: url(../../assets/images/image_pages/images_online/Marvel_entertainment_logo.jpg);
-      background-position-y: -50px;
+      /* background-position-y: -50px; */
+      background-size:100% 100%;
     }
+
+    @media screen and (max-width: 767px){   
+    .child1,
+    .child2{      
+      margin-left: -70px;
+      margin-right: 20px;
+    } 
+}
 
     .sidenav a {
       padding: 8px 8px 8px 32px;

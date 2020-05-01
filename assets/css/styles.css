@@ -178,6 +178,8 @@ width: 50%;
     background-size: cover !important;
     box-sizing: border-box;
     transform-style: preserve-3d;
+    background-size:100% 100%;
+    
 }
 
 .parallax-wrapper::before {
@@ -191,6 +193,7 @@ width: 50%;
     position: absolute;
     z-index: -1;
     transform:translateZ(-1px) scale(2);
+    background-size:100% 100%;
 }
 
 /* made a change */
@@ -201,7 +204,7 @@ width: 50%;
     background-size: cover;
     box-sizing: border-box;
     transform-style: preserve-3d;
-    
+    background-size:100%;
 }
 .parallax-wrapper2::before {
     content:"";
@@ -213,11 +216,12 @@ width: 50%;
     /* background-image: url("https://beforesandafters.com/wp-content/uploads/2019/05/CapvCap-e1557913128833-1024x528.jpg"); */
     /* Loki image */
     background-image: url("https://static0.srcdn.com/wordpress/wp-content/uploads/2019/08/Loki-TV-Show-Tom-Hiddleston-1.jpg");
-    background-size: cover;
+    /* background-size: cover; */
     background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
     transform:translateZ(-1px) scale(2);
+    background-size:100% 100%;
 }
 
 .regular-wrapper {
@@ -229,6 +233,7 @@ width: 50%;
   background-size: cover;
   z-index: 2;
   position: relative;
+  background-size:100% 100%;
 }
 .regular-wrapper2 {
   width: 100vw;
@@ -238,6 +243,7 @@ width: 50%;
   background-size: cover;
   z-index: 2;
   position: relative;
+  background-size:100% 100%;
 }
 .regular-wrapper3{
   background-color: #111;
