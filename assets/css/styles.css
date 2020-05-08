@@ -1,5 +1,6 @@
 html {
   overflow: hidden;
+  
 }
 body {
   position: relative;
@@ -55,11 +56,19 @@ h1{
   
 }
 
-@media screen and (max-width: 1299px){   
+/* @media screen and (max-width: 1299px){   
   #menu{   
     font-size: 100px !important;
     }  
   }
+
+
+  @media screen and (max-width: 1299px){   
+    .parallax-wrapper2::before{   
+      display: none !important;
+      background-color: gray !important;
+      }  
+    }
 
 
     @media (orientation: landscape) {
@@ -68,23 +77,13 @@ h1{
         font-size: 50px !important;
 
     }
-  }
+  } */
   
-/* 
-h3{
-  margin: -50px 10px 10px 10px;
-  border: 1px solid red;
-  border-left: none;
-  border-right: none;
-  border-width: 70%;
-  color: white; 
-  position: absolute;
-  left: 25%;
-} */
 
 #card1{
  
 background-color: #818181;
+/* background-color: navy; */
 color: #f1f1f1;
 display: block;
 margin-left: auto;
@@ -213,6 +212,7 @@ width: 50%;
     z-index: -1;
     transform:translateZ(-1px) scale(2);
     background-size:100% 100%;
+    
 }
 
 /* made a change */
@@ -308,3 +308,20 @@ margin: 20px 20px 20px 20px;
   .parallax-wrapper {background-size: cover;}
 
 }
+
+
+@media screen and (max-width: 1299px){   
+  #menu{   
+    font-size: 100px !important;
+    }  
+  }
+
+
+
+    @media (orientation: landscape) {
+
+      #menu{
+        font-size: 50px !important;
+
+    }
+  }
