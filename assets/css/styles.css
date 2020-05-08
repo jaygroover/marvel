@@ -52,7 +52,16 @@ h1{
   color: white;
   display:inline-block;
   z-index: 9999; 
+  
 }
+
+@media screen and (max-width: 1299px){   
+  #menu{   
+    font-size: 100px !important;
+    }  
+  }
+    
+  
 /* 
 h3{
   margin: -50px 10px 10px 10px;
