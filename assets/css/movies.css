@@ -127,6 +127,20 @@ body{
          background-size: cover;
          background-position:20px;
        }
+
+
+/* changes the back ground to fill but not repeat */
+       @media screen and (max-width: 1299px){   
+        .header{      
+          background-image: url("https://granitebaytoday.org/wp-content/uploads/2019/04/studios-infinty-war-lol.jpg");
+          background-size: 100%, 100%;
+          background-position-x: -1px;
+          background-repeat: repeat-y;
+         
+         
+          
+        } 
+    } 
    
        #ironMan{
      /* background-image:url(http://www.westcpapc.com/wp-content/uploads/2014/09/Hands-Holding-World.jpg); 

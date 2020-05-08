@@ -35,11 +35,6 @@ body {
 }
   
 
-/* html {    
-    background: url('https://images.squarespace-cdn.com/content/v1/5ccabcf60b77bdbb3acaf70a/1567683272122-6PF2QDD6NF68VHMGQJOC/ke17ZwdGBToddI8pDm48kNvT88LknE-K9M4pGNO0Iqd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1USOFn4xF8vTWDNAUBm5ducQhX-V3oVjSmr829Rco4W2Uo49ZdOtO_QXox0_W7i2zEA/dd5r35v-e8431f3b-2f7a-4b39-9945-fa6611506b83.jpg') no-repeat center fixed;     
-    background-size: cover;
-} */
-
 #name{
     position: absolute;
     top:0;
@@ -134,7 +129,7 @@ body {
 
     .header {
       height: 50vh;
-      background-image: url("https://www.laughingplace.com/w/wp-content/uploads/2016/07/Marvel_Insider_LOGO.jpg");
+      background-image: url("https://www.clevelandfilm.com/wp-content/uploads/2017/06/avengers-logo.png");
       background-size:100% 100%;
       position: relative;
       
@@ -148,9 +143,9 @@ body {
       left: 0;
       right: 0;
       bottom: 0;
-      /* background-color: #4CAF50; */
       display: flex;
     }
+    
 
     .child1,
     .child2 {
@@ -158,20 +153,6 @@ body {
       margin-left: -100px;
       background-size: cover;
     }
-
-    /* Youtube image in header*/
-    /* .child1 {
-      background-image: url(../../assets/images/image_pages/images_online/youtube.webp);
-      transform: skewX(-20deg);
-      background-position-y: -50px;
-    } */
-
-/* Marvel image in header */
-    /* .child2 {
-      background-image: url(../../assets/images/image_pages/images_online/Marvel_entertainment_logo.jpg);
-      background-position-y: -50px;
-      background-size: cover;
-    } */
 
     .sidenav a {
       padding: 8px 8px 8px 32px;
@@ -202,10 +183,10 @@ body {
       z-index: 9999;
       top: 0%;
       left: 0%;
-      background-color: #111;
       /* back ground image for the nav. menu */
+      background-color: #111;
       background-image: url(../../assets/images/image_pages/images_menu/shieldlogo.jpg);
-      background-position: 20px;
+      /* background-position: 20px; */
       background-size: 100%;
       background-repeat: no-repeat;
       /* background-size: cover; */
@@ -221,22 +202,22 @@ body {
       position: absolute;
       top: 5%;
       left: 2%;
-      /* color: black; */
-      color:black;
+      color:white;
       display: inline-block;
       z-index: 9999;
     }
+      
 
     #nav-color {
       background-color: #333 !important;
     }
   
+  </style>
 
 
 
 
 
-</style>
 <body>
   
 
@@ -249,10 +230,11 @@ body {
 
           <!-- header and menu -->
   <div class="header">
-    <div class="background-imgs">
+    <!-- <div class="background-imgs">
       <div class="child1"></div>
       <div class="child2"></div>
-    </div>
+    </div> -->
+  
     <div style="font-size:30px;cursor:pointer" id="menu" onclick="openNav()">
       &#9776;
     </div>
@@ -301,12 +283,34 @@ body {
     id="nav-color"
   >
     <a class="navbar-brand"></a>
-    <form id="search-form" name="search-form" onsubmit="return search()">
+    <!-- <form id="search-form" name="search-form" onsubmit="return search()">
       <div class="fieldcontainer">
           <input type="search" id="query" class="search-field" placeholder= "search youtube...">
           <button input type="submit" class="btn btn-outline-success my-2 my-sm-0" name="search-btn" id="search-btn" value="">Enter</button>
       </div>
-    </form>
+    </form> -->
+
+    <form method="get" action="http://www.google.com/search" target="_blank">
+
+      <div style="border:1px solid black;padding:4px;width:20em;">
+      <table border="0" align="center" cellpadding="0">
+      <tr><td></td>
+      <input type="text"   name="q" size="25"
+      maxlength="255" value="" />
+      <input type="submit"/></td></tr>
+      <tr><td align="center" style="font-size:75%">
+      <input type="radio"  name="sitesearch" value="" />The Web
+      <input type="radio"  name="sitesearch"
+      value="yoursite.com" checked /> Only Your Site<br />
+      </td></tr></table>
+      </div>
+      
+      </form>
+
+    <!-- <form method="get" action="https://en.wikipedia.org/w/index.php"class="searchform" method="get" name="searchform" target="_blank">
+          <input type="text" name="search" placeholder="search about marvel">
+          <input type="submit">
+        </form> -->
   </nav>
 
 <!--this is the video div-->
@@ -317,6 +321,7 @@ body {
       
       <!-- test card -->
 <!-- image card -->
+<div class="row mb-2">
 <div class="col-md-12">
     <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
       <div class="col-auto d-none d-lg-block">
@@ -337,10 +342,15 @@ body {
   </div>
   <!-- end of test card -->
 
+  <!-- <br>
   <br>
   <br>
   <br>
+
   <br>
+  <br>
+  <br>
+  <br> -->
 
        <!-- test card -->
 <!-- image card -->
@@ -365,10 +375,10 @@ body {
   <!-- end of test card -->
 
 
+  <!-- <br>
   <br>
   <br>
-  <br>
-  <br>
+  <br> -->
 
        <!-- test card -->
 <!-- image card -->
@@ -390,10 +400,108 @@ body {
       
     </div>
   </div>
+
+  <!-- <br>
+  <br>
+  <br>
+  <br> -->
+
   <!-- end of test card -->
+
+  <!-- <div class="row mb-2"> -->
+    <!-- image card -->
+<div class="col-md-5">
+  <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+    <div class="col-auto d-none d-lg-block">
+        <img src="https://i.redd.it/t53ekln9nx041.png" width="200" height="350" vh="100%" xmlns="https://i.redd.it/t53ekln9nx041.png" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+    </div>
+
+<!-- text card -->
+    <div class="col p-4 d-flex flex-column position-static" id="dark">
+      <strong class="d-inline-block mb-2 text-primary">World</strong>
+      <h3 class="mb-0">Black Widow</h3>
+      <div class="mb-1">Release Date: Nov 12</div>
+      <p class="card-text mb-auto">After being handed the mantle of Captain America at the end of Avengers: Endgame (2019), 
+        Sam Wilson teams up with Bucky Barnes in a worldwide adventure that puts their abilities to the test.</p>
+      <a href="#" class="stretched-link">Continue reading</a>
+    </div>
+    
+  </div>
+</div>
+<!-- end of test card -->
+
+<div class="col-md-5">
+  <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+    <div class="col-auto d-none d-lg-block">
+        <img src="https://i.redd.it/t53ekln9nx041.png" width="200" height="350" vh="100%" xmlns="https://i.redd.it/t53ekln9nx041.png" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+    </div>
+
+<!-- text card -->
+    <div class="col p-4 d-flex flex-column position-static" id="dark">
+      <strong class="d-inline-block mb-2 text-primary">World</strong>
+      <h3 class="mb-0">Black Widow</h3>
+      <div class="mb-1">Release Date: Nov 12</div>
+      <p class="card-text mb-auto">After being handed the mantle of Captain America at the end of Avengers: Endgame (2019), 
+        Sam Wilson teams up with Bucky Barnes in a worldwide adventure that puts their abilities to the test.</p>
+      <a href="#" class="stretched-link">Continue reading</a>
+    </div>
+    
+  </div>
+</div>
+
+    <aside class="col-md-2 blog-sidebar">
+        <!-- <div class="p-3 mb-3 bg-light rounded">
+            <h4 class="font-italic">About</h4>
+            <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus
+                sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+        </div> -->
+
+        <div class="p-3">
+            <h4 class="font-italic">Archives</h4>
+            <ol class="list-unstyled mb-0">
+                <li><a href="#">March 2014</a></li>
+                <li><a href="#">February 2014</a></li>
+                <li><a href="#">January 2014</a></li>
+                <li><a href="#">December 2013</a></li>
+                <li><a href="#">November 2013</a></li>
+                <li><a href="#">October 2013</a></li>
+                <li><a href="#">September 2013</a></li>
+                <li><a href="#">August 2013</a></li>
+                <li><a href="#">July 2013</a></li>
+                <li><a href="#">June 2013</a></li>
+                <li><a href="#">May 2013</a></li>
+                <li><a href="#">April 2013</a></li>
+            </ol>
+        </div>
+
+        <div class="p-3">
+            <h4 class="font-italic">Check us out</h4>
+            <ol class="list-unstyled">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ol>
+        </div>
+    </aside>
+</div>
+
+
+
+
+
+    <!-- end of page -->
       
         </div>
     </div>
 
+
+
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+<script src="../../assets/javascript/app.js"></script>   
+
+    
 </body>
 </html>
